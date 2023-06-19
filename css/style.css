@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&family=Raleway:wght@100;200;300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 0 2% 0 2%;
+  justify-content: space-between;
+}
+header .logoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logoo .fa-location-dot {
+  font-size: 24px;
+  color: red;
+}
+header .logoo p {
+  color: red;
+  font-size: 30px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+header .busca {
+  display: flex;
+}
+header .busca .fa-magnifying-glass {
+  font-size: 24px;
+  color: grey;
+}
+header .busca .bi-search {
+  fill: grey;
+}
+
+.travel {
+  display: flex;
+  background-image: url(../imagens/london.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.travel .container {
+  width: 52.5%;
+  height: 250px;
+}
+.travel .categorias {
+  display: flex;
+}
+.travel .categorias .subcategorias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  width: 100vw;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.travel .categorias .subcategorias:hover {
+  background-color: red;
+}
+.travel .categorias .subcategorias .fa-plane {
+  rotate: 320deg;
+}
+.travel form {
+  display: flex;
+  align-items: center;
+  height: 210px;
+  padding: 0 20px;
+}
+.travel form #submit {
+  cursor: pointer;
+  background-color: grey;
+  border: none;
+  padding: 10px;
+  color: #fff;
+}
+.travel form #submit:hover {
+  background-color: red;
+}
+.travel form .container-form {
+  background-color: #fff;
+  width: 100%;
+}
+.travel .form {
+  background-color: #fff;
+}
+.travel .form h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.travel .form .separador {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: start;
+  gap: 20px;
+}
+.travel .form .separador .form-from, .travel .form .separador .form-to {
+  width: 50%;
+}
+.travel .form .separador input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid darkgrey;
+}
+
+.good-offers {
+  padding: 0 10%;
+  height: 100%;
+  padding-bottom: 50px;
+  background-color: #F1F1F1;
+}
+.good-offers .title-section h3 {
+  font-size: 42px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.good-offers .title-section p {
+  padding-bottom: 15px;
+}
+.good-offers .grid-good {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+}
+.good-offers .grid-good .item1 {
+  grid-area: 1/1/3/3;
+  width: 100%;
+  object-fit: none;
+}
+.good-offers .grid-good .item1 img {
+  width: 100%;
+  height: 100%;
+}
+.good-offers .grid-good .item2 {
+  grid-area: 1/3/2/4;
+}
+.good-offers .grid-good .item2 img {
+  width: 100%;
+  height: 100%;
+}
+.good-offers .grid-good .item3 {
+  grid-area: 1/4/2/5;
+}
+.good-offers .grid-good .item3 img {
+  width: 100%;
+  height: 100%;
+}
+.good-offers .grid-good .item4 {
+  grid-area: 2/3/3/4;
+}
+.good-offers .grid-good .item4 img {
+  width: 100%;
+  height: 100%;
+}
+.good-offers .grid-good .item5 {
+  grid-area: 2/4/3/5;
+}
+.good-offers .grid-good .item5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.explore-nature {
+  padding: 0 10% 2%;
+  background-color: #F1F1F1;
+}
+.explore-nature .title-section h3 {
+  font-size: 42px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.explore-nature .title-section p {
+  padding-bottom: 15px;
+}
+.explore-nature .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.explore-nature .cards .card {
+  background-color: #fff;
+  width: 49%;
+}
+.explore-nature .cards .card img {
+  width: 100%;
+}
+.explore-nature .cards .card .information-card {
+  padding: 0 15px;
+}
+.explore-nature .cards .card .information-card h3 {
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.explore-nature .cards .card .information-card .price {
+  color: darkgrey;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.explore-nature .cards .card .information-card .description-card {
+  padding-bottom: 20px;
+}
+.explore-nature .cards .card .information-card .btn-tickets {
+  padding-bottom: 20px;
+}
+.explore-nature .cards .card .information-card .btn-tickets button {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+.explore-nature .cards .card .information-card .btn-tickets button:hover {
+  background-color: red;
+}
+
+.newsletter {
+  padding: 0 10% 2%;
+  background-color: #F1F1F1;
+}
+.newsletter .container-newsletter {
+  background-color: grey;
+  color: #fff;
+  padding: 20px 15px;
+}
+.newsletter .container-newsletter h3 {
+  font-size: 38px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.newsletter .container-newsletter p {
+  padding-bottom: 15px;
+}
+.newsletter .container-newsletter form #email {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+.newsletter .container-newsletter form #email:focus {
+  outline: none;
+}
+.newsletter .container-newsletter form button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.newsletter .container-newsletter form button:hover {
+  background-color: darkgrey;
+}
+
+.contact {
+  padding: 0 10%;
+  background-color: #F1F1F1;
+}
+.contact h3 {
+  font-size: 38px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.contact .description-text {
+  padding-bottom: 15px;
+}
+.contact .information-contact {
+  padding-bottom: 15px;
+}
+.contact .information-contact .informations-flex {
+  display: flex;
+  gap: 20px;
+}
+.contact .information-contact .informations-flex .fa-location-dot {
+  width: 16px;
+  height: 16px;
+}
+.contact #name, .contact #email2 {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  border: 1px solid darkgrey;
+}
+.contact #name:focus, .contact #email2:focus {
+  outline: none;
+}
+.contact #message {
+  width: 100%;
+  height: 80px;
+  padding: 5px 10px 0;
+  border: 1px solid darkgrey;
+}
+.contact #message:focus {
+  outline: none;
+}
+.contact #btn-send {
+  background-color: black;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contact #btn-send:hover {
+  background-color: darkgrey;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  background-color: #F1F1F1;
+}
+footer .title-footer {
+  font-size: 20px;
+}
+footer p {
+  font-weight: 300;
+  color: grey;
+  padding: 20px 0;
+}
+footer p span {
+  text-decoration: underline;
+}
+footer .socialmedia {
+  display: flex;
+  gap: 10px;
+  color: grey;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .travel {
+    height: 400px;
+    background-size: fill;
+  }
+  .travel .container {
+    width: 70%;
+    height: 200px;
+  }
+  .good-offers {
+    padding: 0 2%;
+  }
+  .good-offers .grid-good {
+    height: 100%;
+  }
+  .good-offers .title-section h3 {
+    font-size: 24px;
+  }
+  .good-offers .title-section p {
+    font-size: 14px;
+  }
+  .explore-nature {
+    padding: 0 2% 30px;
+  }
+  .explore-nature .title-section h3 {
+    font-size: 24px;
+  }
+  .explore-nature .title-section p {
+    font-size: 14px;
+  }
+  .explore-nature .cards .card {
+    width: 49%;
+  }
+  .explore-nature .cards .card .information-card h3 {
+    font-size: 24px;
+  }
+  .explore-nature .cards .card .information-card .price {
+    font-size: 14px;
+  }
+  .explore-nature .cards .card .information-card p {
+    font-size: 14px;
+  }
+  .newsletter {
+    padding: 0 2% 30px;
+  }
+  .newsletter .title-newsletter h3 {
+    font-size: 28px;
+  }
+  .contact {
+    padding: 0 2% 30px;
+  }
+  .contact .title-contact h3 {
+    font-size: 28px;
+  }
+  .contact .title-contact .description-text {
+    font-size: 14px;
+  }
+  .contact .title-contact .information-contact {
+    font-size: 14px;
+  }
+  .contact .title-contact .information-contact .informations-flex {
+    font-size: 12px;
+  }
+  .contact #btn-send {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .logoo .fa-location-dot {
+    font-size: 18px;
+  }
+  header .logoo p {
+    font-size: 24px;
+  }
+  header .busca .fa-magnifying-glass {
+    font-size: 18px;
+  }
+  .travel {
+    display: flex;
+    width: 100vw;
+    align-items: start;
+    justify-content: start;
+    background-image: none;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .travel .categorias {
+    width: 100vw;
+    margin-bottom: 15px;
+  }
+  .travel .categorias .subcategorias {
+    width: 500px;
+  }
+  .travel .container {
+    width: 200px;
+    height: 250px;
+  }
+  .travel form {
+    padding-left: 0;
+  }
+  .travel form .container-form {
+    width: 100vw;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .travel .form .separador {
+    display: block;
+  }
+  .travel .form .separador input {
+    width: 300px;
+  }
+  .good-offers {
+    padding-bottom: 20px;
+  }
+  .good-offers .title-section h3 {
+    font-size: 24px;
+  }
+  .good-offers .title-section p {
+    font-size: 14px;
+  }
+  .good-offers .grid-good {
+    display: block;
+  }
+  .explore-nature .title-section h3 {
+    font-size: 24px;
+  }
+  .explore-nature .title-section p {
+    font-size: 14px;
+  }
+  .explore-nature .cards {
+    display: block;
+  }
+  .explore-nature .cards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .explore-nature .cards .card .information-card h3 {
+    font-size: 20px;
+  }
+  .explore-nature .cards .card .information-card .price {
+    font-size: 14px;
+  }
+  .explore-nature .cards .card .information-card .description-card {
+    font-size: 14px;
+  }
+  .contact #btn-send {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

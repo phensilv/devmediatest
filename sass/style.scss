@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&family=Raleway:wght@100;200;300;400;500;700&display=swap');
+
+//Criar variaveis das cores
+$grey1: #F1F1F1;
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    //overflow: hidden;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    
+    .logoo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .fa-location-dot{
+            font-size: 24px;
+            color: red;
+        }
+        p{
+            color: red;
+            font-size: 30px;
+            padding-left: 10px;
+            font-weight: 500;
+        }
+    }
+  
+    .busca{
+        display: flex;
+        .fa-magnifying-glass{
+            font-size: 24px;
+            color: grey;
+        }
+        .bi-search{
+            fill: grey;
+        }
+    }
+    
+}
+
+.travel{
+    display: flex;
+    background-image: url(../imagens/london.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 52.5%;
+        height: 250px;
+    }
+    .categorias{
+        display: flex;
+        
+        .subcategorias{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            width: 100vw;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+            gap: 10px;
+            &:hover{
+                background-color: red;
+            }
+            .fa-plane{
+                rotate: 320deg;
+                
+            }
+        }
+        
+    
+    }
+    form{
+        display: flex;
+        align-items: center;
+        height: 210px;
+        padding: 0 20px;
+        
+
+        #submit{
+            cursor: pointer;
+            background-color: grey;
+            border: none;
+            padding: 10px;
+            color: #fff;
+            &:hover{
+                background-color: red;
+            }
+        }
+        .container-form{
+            background-color: #fff;
+            width: 100%;
+        }
+    }
+    .form{
+        background-color: #fff;
+        h3{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .separador{
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            justify-content: start;
+            gap: 20px;
+            .form-from, .form-to{
+                width: 50%;
+                
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 1px solid darkgrey;
+                
+            }
+        }
+    }
+}
+//aprender a sobrepor itens  
+.good-offers{
+    padding: 0 10%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: $grey1;
+    .title-section{
+        h3{
+            font-size: 42px;
+            font-weight: 300;
+            padding: 15px 0;
+            }
+        p{
+            padding-bottom: 15px;
+        }
+    }
+    .grid-good{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-content: space-between;
+        .item1 { 
+            grid-area: 1 / 1 / 3 / 3; 
+            width: 100%;
+            object-fit: none;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        .item2 { 
+            grid-area: 1 / 3 / 2 / 4;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                
+        }}
+        .item3 { 
+            grid-area: 1 / 4 / 2 / 5; 
+
+            img{
+                width: 100%;
+                height: 100%;
+                
+        }}
+        .item4 { 
+            grid-area: 2 / 3 / 3 / 4;
+            img{
+                width: 100%;
+                height: 100%;
+                
+        }}
+        .item5 { 
+            grid-area: 2 / 4 / 3 / 5; 
+            img{
+                width: 100%;
+                height: 100%;
+                
+        }}
+    }
+}
+
+.explore-nature{
+    
+    padding: 0 10% 2%;
+    background-color: $grey1;
+    
+    .title-section{
+        h3{
+            font-size: 42px;
+            font-weight: 300;
+            padding: 15px 0;
+            }
+        p{
+            padding-bottom: 15px;
+        }
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        
+        .card{
+            background-color: #fff;
+            //width: 750px;
+            width: 49%;
+            img{
+                width: 100%;
+            }
+            .information-card{
+                padding: 0 15px;
+                h3{
+                    font-size: 36px;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                }
+                .price{
+                    color: darkgrey;
+                    font-size: 14px;
+                    padding-bottom: 20px;
+                }
+                .description-card{
+                    padding-bottom: 20px;
+                }
+                .btn-tickets{
+                    padding-bottom: 20px;
+                    button{
+                        background-color: black;
+                        color: #fff;
+                        cursor: pointer;
+                        padding: 10px;
+                        border: none;
+                        &:hover{
+                            background-color: red;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.newsletter{
+    padding: 0 10% 2%;
+    background-color: $grey1;
+    .container-newsletter{
+        background-color: grey;
+        color: #fff;
+        padding: 20px 15px;
+        h3{
+            font-size: 38px;
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+        p{
+            padding-bottom: 15px;
+        }
+        form{
+            #email{
+                width: 100%;
+                height: 40px;
+                padding: 0 10px;
+                &:focus{
+                    
+                    outline: none;
+                }
+            }
+            button{
+                background-color: red;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: darkgrey;
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    padding: 0 10%;
+    background-color: $grey1;
+    h3{
+        font-size: 38px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .description-text{
+        padding-bottom: 15px;
+    }
+    .information-contact{
+        padding-bottom: 15px;
+        .informations-flex{
+            display: flex;
+            gap: 20px;
+            .fa-location-dot{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    #name, #email2{
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        border: 1px solid darkgrey;
+        &:focus{ 
+            outline: none;
+        }
+    }
+
+    #message{
+        width: 100%;
+        height: 80px;
+        padding: 5px 10px 0;
+        border: 1px solid darkgrey;
+        &:focus{ 
+            outline: none;
+        }
+    }
+    #btn-send{
+        background-color: black;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        margin-top: 15px;
+        cursor: pointer;
+        &:hover{
+            background-color: darkgrey;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-color: $grey1;
+    
+    .title-footer{
+        font-size: 20px;
+    }
+    p{
+        font-weight: 300;
+        color: grey;
+        padding: 20px 0;
+        span{
+            text-decoration: underline;
+        }
+    }
+    .socialmedia{
+        display: flex;
+        gap: 10px;
+        color: grey;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .travel{
+        height: 400px;
+        background-size: fill;
+        .container{
+            width: 70%;
+            height: 200px;
+        }
+    }
+
+    .good-offers{
+        padding: 0 2%;
+        .grid-good{
+            height: 100%;
+        }
+        .title-section{
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .explore-nature{
+        padding: 0 2% 30px;
+        .title-section{
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .cards{
+            .card{
+                width: 49%;
+                .information-card{
+                    h3{
+                        font-size: 24px;
+                    }
+                    .price{
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter{
+        padding: 0 2% 30px;
+        .title-newsletter{
+            h3{
+                font-size: 28px;
+            }
+        }
+    }
+
+    .contact{
+        padding: 0 2% 30px;
+        .title-contact{
+            h3{
+                font-size: 28px;
+            }
+            .description-text{
+                font-size: 14px;
+            }
+            .information-contact{
+                font-size: 14px;
+                .informations-flex{
+                    font-size: 12px;
+                }
+            }
+        }
+        #btn-send{
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header{
+        .logoo{
+            .fa-location-dot{
+                font-size: 18px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .busca{
+            .fa-magnifying-glass{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .travel{
+        display: flex;
+        width: 100vw;
+        align-items: start;
+        justify-content: start;
+        background-image: none;
+        background-size: cover;
+        height: 100%;
+        margin-bottom: 50px;
+        .categorias{
+            width: 100vw;
+            margin-bottom: 15px;
+            .subcategorias{
+                width: 500px;
+            }
+        }
+    .container{
+        width: 200px;
+        height: 250px;
+    }
+    form{
+        padding-left: 0;
+        .container-form{
+            width: 100vw;
+            padding-left: 10px;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+    }
+    .form{
+        
+    .separador{
+        display: block;
+        
+        input{
+            
+            width: 300px;
+        }
+    
+    }
+    }
+    
+    }
+
+    .good-offers{
+        padding-bottom: 20px;
+        .title-section{
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .grid-good{
+            display: block;
+        }
+    }
+
+    .explore-nature{
+        .title-section{
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .cards{
+            display: block;
+            .card{
+                width: 100%;
+                margin-bottom: 20px;
+                .information-card{
+                    h3{
+                    font-size: 20px; 
+                    }
+                    .price{
+                        font-size: 14px;
+                    }
+                    .description-card{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        #btn-send{
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+}
